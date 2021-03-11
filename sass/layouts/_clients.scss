@@ -1,43 +1,52 @@
-.clients-list .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.clients-list {
+  @include flexbox;
+  flex-wrap: wrap;
+}
+
+.clients-list__item {
+  @media screen and (max-width: $tablet - 1) {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &:nth-last-child(n + 3) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    &:nth-last-child(n + 4) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.clients-list__link {
+  @include flexbox(center, center);
+
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid $icon-color;
   border-radius: 4px;
-}
+  fill: $icon-color;
 
-.clients-list .link:hover,
-.clients-list .link:focus {
-  border-color: $accent-color;
-  --color1: #2196f3;
-  --color2: #2196f3;
-  transition-duration: 250ms;
-}
+  transition: border-color $duration $timing-function,
+    fill $duration $timing-function;
 
-.feature-list .item:not(:last-child),
-.examples-list .item:not(:last-child),
-.team .item:not(:last-child),
-.clients-list .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-list .item {
-  flex-basis: calc((100% - 5 * 30px) / 6);
-}
-
-.icon-antenna::before {
-  background-image: url(../css/svg-icons/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../css/svg-icons/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../css/svg-icons/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../css/svg-icons/astronaut.svg);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
 }
