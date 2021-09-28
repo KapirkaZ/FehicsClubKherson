@@ -385,7 +385,7 @@ svg {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/mobile/header-480.jpg");
+    url("../images/mobile/feniks-bg-480.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -402,7 +402,7 @@ svg {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/mobile/header-480@2x.jpg");
+      url("../images/mobile/feniks-bg-480@2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -412,7 +412,7 @@ svg {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/tablet/header-768.jpg");
+      url("../images/tablet/feniks-bg-768.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -426,7 +426,7 @@ svg {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/tablet/header-768@2x.jpg");
+      url("../images/tablet/feniks-bg-768@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -437,7 +437,7 @@ svg {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/desktop/header-1600.jpg");
+      url("../images/desktop/feniks-bg-1600.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -451,7 +451,7 @@ svg {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/desktop/header-1600@2x.jpg");
+      url("../images/desktop/feniks-bg-1600@2x.jpg");
   }
 }
 .hero__title {
