@@ -581,11 +581,7 @@ svg {
   height: 400px;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  
     url("../images/mobile/feniks-bg-480.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -808,6 +804,7 @@ svg {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    
   }
 }
 
@@ -837,8 +834,11 @@ svg {
 @media screen and (max-width: 1199px) {
   .examples {
     display: none;
+
   }
 }
+
+
 
 .examples-list {
   display: flex;

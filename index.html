@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="./images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студия</title>
+    <title>FeniksClub</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -12,6 +13,7 @@
   </head>
 
   <body>
+    
     <!--Шапка сайта-->
     <header class="header">
       <div class="container flex flex--header">
@@ -43,13 +45,13 @@
           <ul class="list header-contacts">
             <li class="header-contacts__item">
               <a
-                href="mailto:info@feniksclub.com"
+                href="mailto:info@feniksclub.com.ua"
                 class="link header-contacts__link"
               >
                 <svg class="header-contacts__icon" width="16" height="12">
                   <use href="./css/svg-icons/symbol-defs.svg#icon-post"></use>
                 </svg>
-                info@feniksclub.com
+                info@feniksclub.com.ua
               </a>
             </li>
             <li class="header-contacts__item">
@@ -62,7 +64,7 @@
                     href="./css/svg-icons/symbol-defs.svg#icon-telefon"
                   ></use>
                 </svg>
-                +38 066 152 57 26
+                +380661525726
               </a>
             </li>
           </ul>
@@ -194,8 +196,9 @@
       <!--Работники-->
       <section class="section examples">
         <div class="container">
-          <h2 class="section__title">Чим ми займаємось</h2>
-          <ul class="list examples-list">
+          <h2 class="section__title">Наша мета</h2>
+          <p class="section__title">розвиток здорового суспільства, а також популяризація спорту та здорового способу життя.</p>
+          <!-- <ul class="list examples-list">
             <li class="examples-list__item">
               <img
                 srcset="
@@ -240,14 +243,14 @@
                 <h3 class="examples-list__text">Дизайнерские решения</h3>
               </div>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
 
       <!-- Наша команда -->
       <section class="section section--gray">
         <div class="container">
-          <h2 class="section__title">Тренери</h2>
+          <h2 class="section__title">Представники</h2>
           <ul class="list team-list">
             <!-- Первый работник -->
             <li class="team-list__item">
@@ -365,7 +368,7 @@
                   "
                   media="(max-width: 767px)"
                 />
-                <img src="./images/lena.jpg" alt="Ольга Репина" />
+                <img src="./images/lena.jpg" alt="Lena" />
               </picture>
               <h3 class="team-list__title">Олена Капінос</h3>
               <p class="team-list__text">Керівник клубу <br />тренер</p>
@@ -609,7 +612,11 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title">Наші досягнення</h2>
-          <ul class="list clients-list">
+          <img srcset="
+                              ./images/desktop/teamfeniks.jpg 1x,
+                              ./images/desktop/teamfeniks.jpg 2x
+                            " src="./images/teamfeniks.jpg" alt="Человек за ноутбуком" width="900" />
+          <!-- <ul class="list clients-list">
             <li class="clients-list__item">
               <a href="" class="link clients-list__link">
                 <svg width="44" height="50">
@@ -665,7 +672,7 @@
                 </svg>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
     </main>
